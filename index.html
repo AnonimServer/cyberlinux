@@ -1,10 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Website Saya</title>
+<meta charset="UTF-8">
+<title>Website Instansi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+body{margin:0;font-family:Arial;background:#f5f6fa}
+header{position:fixed;width:100%;background:#0a3d62;color:white;padding:15px;z-index:10}
+nav a{color:white;margin:15px;text-decoration:none}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url('https://picsum.photos/1600/900');background-size:cover;display:flex;align-items:center;justify-content:center;color:white;text-align:center}
+.section{padding:80px 10%}
+.card{background:white;padding:25px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);margin:15px;transition:.3s}
+.card:hover{transform:translateY(-10px)}
+.flex{display:flex;flex-wrap:wrap}
+footer{background:#0a3d62;color:white;text-align:center;padding:20px}
+</style>
 </head>
+
 <body>
-    <h1>Halo Dunia!</h1>
-    <p>Ini website pertama saya.</p>
+
+<header>
+<nav>
+<a href="#">Beranda</a>
+<a href="#profil">Profil</a>
+<a href="#layanan">Layanan</a>
+<a href="#kontak">Kontak</a>
+</nav>
+</header>
+
+<div class="hero">
+<div data-aos="fade-up">
+<h1>INSTANSI PEMERINTAH</h1>
+<p>Melayani Dengan Profesional</p>
+</div>
+</div>
+
+<div class="section" id="profil">
+<h2 data-aos="fade-right">Profil Instansi</h2>
+<p data-aos="fade-left">Website resmi instansi yang menyajikan informasi dan pelayanan publik.</p>
+</div>
+
+<div class="section" id="layanan">
+<h2 data-aos="zoom-in">Layanan Kami</h2>
+<div class="flex">
+<div class="card" data-aos="fade-up">Pelayanan Administrasi</div>
+<div class="card" data-aos="fade-up">Informasi Publik</div>
+<div class="card" data-aos="fade-up">Pengaduan Masyarakat</div>
+</div>
+</div>
+
+<div class="section" id="kontak">
+<h2 data-aos="fade-right">Kontak</h2>
+<p data-aos="fade-left">Alamat Instansi<br>Email: instansi@email.com<br>Telp: 021xxxx</p>
+</div>
+
+<footer>
+© 2026 Website Instansi
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
 </body>
 </html>
